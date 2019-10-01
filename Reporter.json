@@ -1,7 +1,7 @@
 {
   "name": "Reporter",
   "version": "1.0",
-  "author": "CERT-BDF",
+  "author": "Eqliphex",
   "url": "https://github.com/Eqliphex/Reporter",
   "license": "AGPL-V3",
   "description": "Send an email with information from a TheHive case or alert",
