@@ -45,7 +45,7 @@ class Reporter(Responder):
     def get_case_data(self, case_id):
         """
         Contacts the TheHive-API, and gets the case-data,. (Maybe not useful once the program is integrated with Cortex,
-        as the JSON-object given upon a call of the responder, is matching the fetched data from this function.
+        as the JSON-object given upon a call of the responder, is matching the fetched data from this function.)
 
         Args:
             case_id (str): id of the case to be gathered from
@@ -274,7 +274,6 @@ class Reporter(Responder):
                 current = word
             else:
                 current += " " + word
-                temp = len(current)
 
         lines.append(current)
         result = separator.join(lines)
@@ -339,7 +338,7 @@ class Reporter(Responder):
         self.report({'message': 'message sent'})
 
     def operations(self, raw):
-        return [self.build_operation('AddTagToCase', tag='mail sent')]
+        return [self.build_operation('AddTagToCase', tag='report sent')]
 
     def run(self):
         Responder.run(self)
