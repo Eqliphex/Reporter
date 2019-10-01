@@ -1,0 +1,58 @@
+{
+  "name": "Reporter",
+  "version": "1.0",
+  "author": "CERT-BDF",
+  "url": "https://github.com/Eqliphex/Reporter",
+  "license": "AGPL-V3",
+  "description": "Send an email with information from a TheHive case or alert",
+  "dataTypeList": ["thehive:case", "thehive:alert"],
+  "command": "Reporter/reporter.py",
+  "baseConfig": "Reporter",
+  "configurationItems": [
+    {
+      "name": "api_key",
+      "description": "api to connected thehive user",
+      "type": "string",
+      "multi": false,
+      "required": true
+    },
+    {
+      "name": "https_address",
+      "description": "URL to thehive instance",
+      "type": "string",
+      "multi": false,
+      "required": true
+    },
+    {
+      "name": "https_port",
+      "description": "port of thehive instance",
+      "type": "number",
+      "multi": false,
+      "required": true,
+      "defaultValue": 9000
+    },
+    {
+      "name": "from",
+      "description": "email address from which the mail is sent",
+      "type": "string",
+      "multi": false,
+      "required": true
+    },
+    {
+      "name": "smtp_host",
+      "description": "SMTP server used to send mail",
+      "type": "string",
+      "multi": false,
+      "required": true,
+      "defaultValue": "localhost"
+    },
+    {
+      "name": "smtp_port",
+      "description": "SMTP server port",
+      "type": "number",
+      "multi": false,
+      "required": true,
+      "defaultValue": 25
+    }
+  ]
+}
