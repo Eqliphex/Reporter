@@ -4,7 +4,7 @@
   "author": "Eqliphex",
   "url": "https://github.com/Eqliphex/Reporter",
   "license": "AGPL-V3",
-  "description": "Send an email with information from a TheHive case or alert",
+  "description": "Generate a report of selected TheHive-case information, and send it as a mail.",
   "dataTypeList": ["thehive:case", "thehive:alert"],
   "command": "Reporter/reporter.py",
   "baseConfig": "Reporter",
