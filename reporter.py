@@ -341,6 +341,7 @@ class Reporter(Responder):
         return [self.build_operation('AddTagToCase', tag='mail sent')]
 
     def run(self):
+        Responder.run(self)
 
         case_id = self.get_param("data._id")
         filtered = self.dict_builder(self.get_case_data(case_id), self.case_data_filter)
