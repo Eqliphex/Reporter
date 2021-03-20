@@ -2,7 +2,7 @@
 # (sorted alphabetically)
 
 cortexutils==2.0.0
-Jinja2==2.10.1
+Jinja2==2.11.3
 thehive4py==1.6.0
 
 # Secondary dependencies
